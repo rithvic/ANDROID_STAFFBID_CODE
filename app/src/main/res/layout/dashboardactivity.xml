@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/top_navigation_layout"
+        android:background="@color/colorAccent"
+
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/navigation_btn_layout"
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_marginRight="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backbutton1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/navbackbutton"
+                android:tint="#FFFFFF"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/titlenavi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Staffbid"
+
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/shareView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:layout_weight=".15"
+                android:scaleType="fitCenter"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/calender"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Available Jobs"
+                android:textAlignment="center"
+                android:textColor="@color/textbackground"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/birthclub"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Applied Jobs"
+                android:textAlignment="center"
+                android:textColor="@color/textbackground"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tools"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Profile"
+                android:textAlignment="center"
+                android:textColor="@color/textbackground"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+<FrameLayout
+android:layout_width="match_parent"
+android:id="@+id/frameLayout"
+android:layout_height="match_parent"/>
+
+
+    </LinearLayout>

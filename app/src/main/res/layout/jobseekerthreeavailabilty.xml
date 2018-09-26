@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/top_navigation_layout"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/navigation_btn_layout"
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_marginRight="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:gravity="center"
+                android:id="@+id/jibackbutton"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".15"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+
+                android:scaleType="fitCenter"
+                android:src="@drawable/navbackbutton"
+                android:tint="@color/textbackground"/>
+
+            <TextView
+                android:id="@+id/titlenavi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/textbackground"
+
+                android:text="Job Information"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/shareView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:layout_weight=".15"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <Spinner
+        android:id="@+id/jispinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:isScrollContainer="true"
+        android:spinnerMode="dialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/jistartdate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:inputType="date"
+            android:lineSpacingExtra="10sp"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:text="Start Date"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/jienddate"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:inputType="date"
+            android:lineSpacingExtra="10sp"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:text="End Date"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:typeface="normal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/jistarttime"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:inputType="date"
+            android:lineSpacingExtra="10sp"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:text="Start Time"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/jiendtime"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:inputType="date"
+            android:lineSpacingExtra="10sp"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:text="End Time"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:typeface="normal" />
+
+
+    </LinearLayout>
+
+        <TextView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+
+            android:text="Select Available days" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight=".90"
+            android:gravity="center"
+            android:text="All days"
+            android:textAlignment="textStart" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/jialldays"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:checked="false"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:text=""
+             />
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:text="  AM"
+            android:textAlignment="textStart" />
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="  PM"
+            android:textAlignment="textStart" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:text="Sunday"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+
+            android:id="@+id/jisundayam"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:checked="false"
+            android:gravity="center" />
+
+        <CheckBox
+
+            android:id="@+id/jisundaypm"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:checked="false"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:text="Monday"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+
+            android:id="@+id/jimondayam"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:checked="false"
+            android:gravity="center" />
+
+        <CheckBox
+
+            android:id="@+id/jimondaypm"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:checked="false"
+            android:gravity="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:text="Tuesday"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+
+            android:id="@+id/jituesdayam"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:checked="false"
+            android:gravity="center"
+            android:text="" />
+
+        <CheckBox
+
+            android:id="@+id/jituesdaypm"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:checked="false"
+            android:gravity="center"
+            android:text="" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:text="Wednesday"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+
+            android:id="@+id/jiwedam"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:checked="false"
+            android:gravity="center"
+            android:text="" />
+
+        <CheckBox
+
+            android:id="@+id/jiwedpm"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:text="Thursday"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+
+            android:id="@+id/jithursam"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:checked="false"
+            android:gravity="center"
+            android:text="" />
+
+        <CheckBox
+
+            android:id="@+id/jithurpm"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:checked="false"
+            android:gravity="center"
+            android:text="" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:text="Friday"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+
+            android:id="@+id/jifriam"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:checked="false"
+            android:gravity="center"
+            android:text="" />
+
+        <CheckBox
+
+            android:id="@+id/jifripm"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:text="Saturday"
+            android:textAlignment="textStart" />
+
+        <CheckBox
+
+            android:id="@+id/jisatam"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:text="" />
+
+        <CheckBox
+
+            android:id="@+id/jisatupm"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="" />
+
+    </LinearLayout>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+
+            android:text="Location" />
+
+        <EditText
+            android:id="@+id/userlocationtex"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="2dp"
+            android:inputType="text"
+            android:visibility="gone"
+            android:lineSpacingExtra="10sp"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textStyle="normal"
+            android:typeface="normal" />
+
+
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:id="@+id/spinner_search"
+            android:layout_width="match_parent"
+            android:prompt="@string/country"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textbackground" />
+
+
+        <Button
+            android:id="@+id/jiregisterdata"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textbackground"
+
+            android:background="@color/colorAccent"
+            android:text="Continue "
+            android:textAllCaps="false" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text=""
+
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

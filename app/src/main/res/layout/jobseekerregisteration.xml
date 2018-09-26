@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_navigation_layout"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/navigation_btn_layout"
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_marginRight="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backbutton1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight=".15"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:src="@drawable/navbackbutton"
+                android:tint="@color/textbackground" />
+
+            <TextView
+                android:id="@+id/titlenavi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+               android:gravity="center"
+                android:textColor="@color/textbackground"
+
+                android:text="Registration details"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/shareView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:background="#00ffffff"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+       />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="First Name"
+         />
+
+    <EditText
+        android:id="@+id/userfirstname"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:inputType="text"
+        android:lineSpacingExtra="10sp"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Last Name"
+         />
+
+    <EditText
+        android:id="@+id/userlastname"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:inputType="text"
+        android:lineSpacingExtra="10sp"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Date of Birth (MM/DD/YYYY)" />
+
+    <Button
+        android:id="@+id/userdateofbirth"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Date"
+        android:inputType="numberSigned"
+        android:lineSpacingExtra="10sp"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:text="Choose your Date of Birth"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Mobile Number" />
+
+    <EditText
+        android:id="@+id/usermobilenumber"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:inputType="number"
+        android:lineSpacingExtra="10sp"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/employeecontinue"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="Continue"
+        android:textColor="@color/textbackground"
+
+        android:textAllCaps="false" />
+
+
+
+
+</LinearLayout>

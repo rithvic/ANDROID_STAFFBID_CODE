@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_navigation_layout"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/navigation_btn_layout"
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ubackbutfor"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.15"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                android:contentDescription="welcome"
+                android:scaleType="fitCenter"
+                android:src="@drawable/navbackbutton"
+                android:tint="@color/textbackground" />
+
+            <TextView
+                android:id="@+id/Forogotpassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:textColor="@color/textbackground"
+
+                android:text="Forgot Password"
+                android:gravity="center"
+
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/shareView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:background="#00ffffff"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="150dp"
+
+        android:text="Enter your Email"
+    />
+
+    <EditText
+        android:id="@+id/foroid"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="2dp"
+        android:lineSpacingExtra="10sp"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        android:typeface="normal" />
+    <Spinner
+
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/butforgot"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="Forgot password "
+        android:textColor="@color/textbackground"
+
+        android:textAllCaps="false" />
+
+
+</LinearLayout>
